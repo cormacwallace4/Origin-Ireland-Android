@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Origin"
+    android:background="@drawable/bgimage1"
+    android:fitsSystemWindows="true">
+
+    <!-- ViewPager2 layout -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true" />
+
+    <!-- Buttons layout -->
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_slider"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@null">
+
+
+    <!-- Back button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="85dp"
+            android:textColor="@color/system_blue"
+            android:background="@null"
+            android:drawableLeft="@drawable/baseline_arrow_back_black_18"
+            android:drawableTint="@color/system_blue"
+            android:textAllCaps="false"
+            android:text="Back"
+            android:textSize="16sp"/>
+
+
+        <!-- Save Location button -->
+        <Button
+            android:id="@+id/directions_button"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="85dp"
+            android:backgroundTint="@color/system_blue"
+            android:background="@drawable/button_bg_rounded"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="Directions"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <!-- Scrollable TextView layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save_button"
+        android:layout_below="@id/buttons_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/discover_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/location_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Other TextViews or content -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Location button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/system_blue"
+        android:background="@drawable/button_bg_rounded"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Save Location"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
+
+

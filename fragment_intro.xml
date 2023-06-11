@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="450dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bgimage1"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Welcome to Origin!"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:fontStyle="normal"
+                    android:fontWeight="600"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Zoom in to start your journey! More historical locations will reveal themselves to you the closer you get."
+                    android:paddingTop="20dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Discover the captivating history of these ancient buildings and explore their accompanying photo galleries."
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Effortlessly store your favorite sites in the 'Saved Locations' list for future viewing."
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="If you want to visit any of these sites, simply click the 'Directions' button to be guided straight to the location!"
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_got_it"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="Got it!"
+                    android:background="@drawable/rounded_gradient_bg"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>
